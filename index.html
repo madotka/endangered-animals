@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ワオキツネザル</title>
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/top.css" rel="stylesheet" type="text/css" />
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
+
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/swiper.js" defer></script>
+
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "lzc8qyc",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!--ヘッダ-->
+      <header>
+        <h1>ワオキツネザル</h1>
+      </header>
+
+      <!--メイン-->
+      <main>
+        <!--写真-->
+        <article id="photo">
+          <img
+            src="images/waokitsunezaru_03.png"
+            width="339"
+            height="225"
+            alt=""
+          />
+        </article>
+
+        <!--情報-->
+        <div id="info">
+          <!--紹介-->
+          <article id="intro">
+            <h2>ワオキツネザルとは?</h2>
+            <h3>
+              ワオキツネザルは主にマダガスカル島に生息し、一般的なサルのイメージとは異なり鼻面は長く、名前の通りキツネのような顔をしています。白黒しま模様の長い尾が特徴的で、名前の由来にもなっています。漢字で表記すると「輪尾（＝ワオ）キツネザル」となり、英語もそのまま”Ring-tailed
+              lemur(輪っかの尾のキツネザル)です。樹林地帯に５〜20頭の群をつくり生活していて、一般的なサル社会とは異なりメス優位の社会になっています。
+            </h3>
+          </article>
+
+          <!--レッドリスト-->
+          <article id="list">
+            <h2>レッドリスト区分</h2>
+            <ul>
+              <img src="images/redlist.png" width="282" height="331" alt="" />
+            </ul>
+          </article>
+
+          <!--個体数-->
+          <article id="graph">
+            <h2>現在の推定個体数</h2>
+            <ul>
+              <img src="images/graph.png" width="278" height="138" alt="" />
+            </ul>
+          </article>
+
+          <!--理由-->
+          <article id="cause">
+            <h2>絶滅危機のワケ</h2>
+            <ul>
+              <img src="images/cause.png" width="208" height="113" alt="" />
+            </ul>
+          </article>
+
+          <!--できること-->
+          <article id="can">
+            <h2>私たちにできること</h2>
+            <ul>
+              <img src="images/can.png" width="275" height="241" alt="" />
+            </ul>
+          </article>
+
+          <article id="other">
+            <p><img src="images/other.png" width="74" height="10" alt="" /></p>
+          </article>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/ajiazou.png"
+                  
+                  alt="Swiper01"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper01.png"
+                  alt="Swiper01"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper01.png"
+                  alt="Swiper01"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <p id="pagetop">
+            <a href="#wrapper"
+              ><img src="images/pagetop.png" width="44" height="44" alt=""
+            /></a>
+          </p>
+        </div>
+      </main>
+
+      <!--フッター-->
+      <footer>
+        <p id="copyright">Copyright © 2023 XXXXX XXXXX. All Rights Reserved.</p>
+      </footer>
+      <!--//フッター-->
+    </div>
+  </body>
+</html>

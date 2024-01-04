@@ -4,8 +4,8 @@ html{
  }
 
 body {
-	background-image: url(../images/back.gif);
 	-webkit-text-size-adjust: 100%;
+	background-size: auto;
 }
 
 h2 {
@@ -28,6 +28,7 @@ h3 {
 	line-height: 1.4em;
 	padding-top: 10px;	
 }
+
 #wrapper {
 	width: 338px;
 	height: 1912px;
